@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header {
+    margin: 0 100px;
+}
+
+@media only screen and (max-width:380px) {
+    .header {
+        margin: 0 20px;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* navbar  */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.nav img {
+    width: 220px;
+    height: 60px;
+}
+
+
+
+
+@media only screen and (max-width:1420px) {
+    .nav img {
+        width: 180px;
+        height: 50px;
+    }
+
+    .menu li {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .nav img {
+        width: 120px;
+        height: 30px;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    width: 450px;
+    height: 50px;
+    font-size: 20px;
+    color: hsl(238, 22%, 44%);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1020px) {
+    .menu {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .menu {
+        width: 200px;
+        margin-top: 25px;
+    }
+}
+
+.menu li:hover {
+    color: hsl(224, 93%, 58%);
+}
+
+/* beginning-page */
+
+.beginning-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+
+@media only screen and (max-width:380px) {
+    .beginning-page {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .beginning-page_left {
+        margin: 0 auto;
+    }
+}
+
+.beginning-page img {
+    width: 700px;
+    height: 500px;
+}
+
+@media only screen and (max-width:1420px) {
+    .beginning-page img {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .beginning-page img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+.beginning-page_left {
+    margin-top: 100px;
+}
+
+.beginning-page_left h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    color: hsl(243, 87%, 12%);
+}
+
+
+.beginning-page_left p {
+    margin: 20px 0 40px 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(243, 87%, 12%);
+}
+
+
+@media only screen and (max-width:1420px) {
+    .beginning-page_left h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .beginning-page_left p {
+        font-size: 15px;
+    }
+}
+
+.beginning-page_left input {
+    width: 300px;
+    margin-right: 15px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+@media only screen and (max-width:1420px) {
+    .beginning-page_left input {
+        margin-bottom: 20px;
+    }
+}
+
+.beginning-page_left button {
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: hsl(224, 93%, 58%);
+}
+
+@media only screen and (max-width:380px) {
+    .beginning-page_left button {
+        width: 300px;
+    }
+
+    .beginning-page_left input {
+        margin-right: 0;
+    }
+
+}
+
+
+/* second page */
+
+.second-page {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.second-page_right img {
+    width: 700px;
+    height: 500px;
+}
+
+
+@media only screen and (max-width:1420px) {
+    .second-page_right img {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .second-page_right img {
+        width: 120px;
+        height: 30px;
+    }
+}
+
+
+.second-page_left h2 {
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.second-page_left p {
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(243, 87%, 12%);
+}
+
+.second-page_left-description {
+    padding-bottom: 20px;
+}
+
+.second-page_left a {
+    color: hsl(170, 45%, 43%);
+    cursor: pointer;
+}
+
+.card {
+    width: 420px;
+    height: 230px;
+    border-radius: 8px;
+    border: 1px solid rgb(229, 226, 226);
+    box-shadow: 0 0 20px 2px hsl(0, 0%, 75%);
+    padding: 25px 35px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 160px;
+    height: 30px;
+}
+
+.avatar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.avatar small {
+    font-weight: 700;
+}
+
+.avatar p {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:1420px) {
+    .second-page_left h2 {
+        font-size: 25px;
+    }
+
+    .second-page_left p {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 15px 15px;
+        width: 360px;
+        height: 160px;
+    }
+
+    .card p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 30px;
+    }
+
+    .avatar img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+
+    .second-page {
+        margin-top: 150px;
+        flex-direction: column-reverse;
+    }
+
+    .second-page_right img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .second-page_left h2 {
+        text-align: center;
+    }
+
+    .card {
+        width: 325px;
+        height: 180px;
+    }
+}
+
+
+/* 
+get started page */
+
+.started-page {
+    background-color: hsl(238, 22%, 44%);
+    width: 100%;
+    padding: 70px 100px;
+    margin-top: 300px;
+}
+
+.started-page_text {
+    width: 600px;
+    height: 170px;
+    margin-right: 100px;
+}
+
+.started-page_text h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.started-page_text p {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.started-page_email {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.started-page input {
+    margin-bottom: 30px;
+    width: 500px;
+    margin-right: 15px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.started-page button {
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: hsl(224, 93%, 58%);
+}
+
+
+/* footer */
+
+.last {
+    padding: 60px 100px 100px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: hsl(243, 87%, 12%);
+}
+
+.last h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.last p {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.last p:hover{
+    color:  hsl(238, 22%, 44%);
+}
+
+.last-first_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 200px;
+}
+
+.last-first_column p {
+    margin-bottom: 10px;
+}
+
+.last-tel {
+    margin-top: 50px;
+}
+
+.last-second_column,
+.last-third_column {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    height: 160px;
+}
+
+.last-icon{
+    margin-top: 130px;
+}
+
+.last-icon img{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:1290px){
+    .last h2, .started-page h2{
+        font-size: 25px;
+    }
+
+    .last p, .started-page p {
+        font-size: 15px;
+    }
+
+    .last-logo{
+        width: 140px;
+        height: 40px;
+    }
+}
+
+
+@media only screen and (max-width:1050px){
+    .started-page_email input{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .last-icon img{
+        width: 20px;
+        height: 20px;
+        margin-left: 0;
+    }
+}
+
+
